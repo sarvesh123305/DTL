@@ -1,0 +1,77 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{csvsimple}
+\title{Assignment No 3}
+\date{4/1/23}
+\author{Sarvesh Anant Kulkarni}
+
+\setlength{\arrayrulewidth}{0.5mm}
+\setlength{\tabcolsep}{18pt}
+\renewcommand{\arraystretch}{1.5}
+\pagenumbering{arabic}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+\centering
+% Table using csv import 
+\section{Branches in COEP Technological University }
+\vspace{2cm}
+\csvautotabular{inputfile.csv}
+
+\large
+
+\newpage
+\section{Placement Data in Computer Engineering }
+\vspace{2cm}
+%Making table manually
+\begin{tabular}{ |p{1cm}|p{5cm}|p{4cm}|  }
+
+\hline
+\multicolumn{3}{|c|}{COEP Technological University} \\
+\hline
+fSr.No & Name of Company & Approx Package (In LPA) \\
+\hline
+1 & Google & 50 LPA \\
+ \hline
+2 & Deshaw  & 48 LPA \\
+ \hline
+3 & Microsoft & 45 LPA \\
+ \hline
+4 & Goldman Sachs  & 44  LPA \\
+ \hline
+5  & Barclays & 48 LPA \\
+ \hline
+6 & Adobe & 40 LPA   \\
+ \hline
+7 & Siemens & 30LPA \\
+ \hline
+8 & Mercedes Benz & 28 LPA \\
+ \hline
+9 & Oracle & 26 LPA \\
+ \hline
+10 & Persistent & 23 LPA \\
+
+\hline
+\end{tabular}
+\newpage
+
+\begin{figure}[h]
+\centering
+\section{Overview of COEP }
+\includegraphics[scale=1.3]{coep1}
+\caption{COEP Campus}
+
+\includegraphics[scale=1.3]{coep2}
+\caption{Main Building}
+
+\pagebreak
+\end{figure}
+
+
+
+\end{document}
